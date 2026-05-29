@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Uwase Cyizere Nadeje | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8fafc;
+    color:#333;
+}
+
+/* Navigation */
+nav{
+    background:#0f172a;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* Hero Section */
+.hero{
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:22px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:white;
+    color:#2563eb;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Sections */
+section{
+    padding:70px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:35px;
+    color:#2563eb;
+    margin-bottom:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Skills */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:#e0f2fe;
+    text-align:center;
+    padding:20px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+/* Projects */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Uwase Cyizere</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <h1>Uwase Cyizere Nadeje</h1>
+    <p>Software Developer | Web Designer | Student</p>
+    <a href="#about" class="btn">Learn More</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="card">
+        <p>
+            My name is <strong>Uwase Cyizere Nadeje</strong>. I am passionate
+            about software development and technology. I enjoy building websites,
+            management systems, and solving real-world problems using programming.
+            I am continuously learning new technologies to improve my skills
+            and become a professional software engineer.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills">
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">PHP</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Git & GitHub</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>Smart Park Sales Management System</h3>
+            <p>
+                A SaaS-based system designed to manage parking operations,
+                sales, reports, and customer records efficiently.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Rwanda Bus Tracker System</h3>
+            <p>
+                A transport tracking application that helps users monitor
+                bus movements and schedules.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                A modern responsive website showcasing my skills,
+                education, and software development projects.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="card">
+        <p><strong>Student of Software Development</strong></p>
+        <p>
+            Interested in Web Development, Database Management,
+            Software Engineering, and Modern Technologies.
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="card contact">
+        <p>📧 Email: youremail@gmail.com</p>
+        <p>📱 Phone: +250 XXX XXX XXX</p>
+        <p>💻 GitHub: github.com/yourusername</p>
+        <p>📍 Kigali, Rwanda</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Uwase Cyizere Nadeje | Portfolio Website</p>
+</footer>
+
+</body>
+</html>
+</body>
+</html>
